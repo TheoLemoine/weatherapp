@@ -1,3 +1,5 @@
+In order to run this project, you must provide API keys for custom google search and open weather map
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
