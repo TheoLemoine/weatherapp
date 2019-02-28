@@ -1,0 +1,61 @@
+.weather-data {
+    border-collapse: collapse;
+    
+    width: 100%;
+    color: white;
+
+    border-top: solid 3px var(--back_col_lighter);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@media (min-width: 600px) {
+    .weather-data {
+        width: 600px;
+        margin: auto;
+    }
+}
+
+.weather-elem{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid 1px var(--back_col_lighter);
+}
+
+.weather-elem:hover {
+    background-color: var(--back_col_light);
+}
+
+.weather-elem > div {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-elem > .weather-drop-down {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: var(--back_col_lighter);
+
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.weather-drop-down.open {
+    height: 3rem;
+}
+
+.weather-drop-down.closed {
+    height: 0;
+}
+
+.weather-drop-down > div {
+    width: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
